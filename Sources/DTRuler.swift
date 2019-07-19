@@ -362,16 +362,16 @@ class Ruler: UIScrollView, UIScrollViewDelegate {
   
   func tileChildrens(from minVisibleX: CGFloat, to maxVisibleX: CGFloat) {
     // add child that are missing on right side
-    if let last = rulerBlocks.last {
-      let rightEdge = last.frame.maxX
-      if rightEdge < maxVisibleX {
-        placeMajorScale(nil, previous: false) { (frame: CGRect) -> CGRect in
-          var newFrame = frame
-          newFrame.origin.x = rightEdge
-          return newFrame
-        }
-      }
-    }
+//    if let last = rulerBlocks.last {
+//      let rightEdge = last.frame.maxX
+//      if rightEdge < maxVisibleX {
+//        placeMajorScale(nil, previous: false) { (frame: CGRect) -> CGRect in
+//          var newFrame = frame
+//          newFrame.origin.x = rightEdge
+//          return newFrame
+//        }
+//      }
+//    }
     
     // add child that are missing on left side
 //    if let first = rulerBlocks.first {
