@@ -374,16 +374,16 @@ class Ruler: UIScrollView, UIScrollViewDelegate {
     }
     
     // add child that are missing on left side
-    if let first = rulerBlocks.first {
-      let leftEdge = first.frame.minX
-      if leftEdge > minVisibleX {
-        placeMajorScale(nil, previous: true) { (frame: CGRect) -> CGRect in
-          var newFrame = frame
-          newFrame.origin.x = leftEdge - newFrame.size.width
-          return newFrame
-        }
-      }
-    }
+//    if let first = rulerBlocks.first {
+//      let leftEdge = first.frame.minX
+//      if leftEdge > minVisibleX {
+//        placeMajorScale(nil, previous: true) { (frame: CGRect) -> CGRect in
+//          var newFrame = frame
+//          newFrame.origin.x = leftEdge - newFrame.size.width
+//          return newFrame
+//        }
+//      }
+//    }
     
     if rulerBlocks.count > numberOfBlocks {
       // remove child that have fallen off right edge
